@@ -15,6 +15,9 @@
     nav{
         transform: translateX(-100vw);
     }
+    .menus{
+        display: block;
+    }
     nav.active{
         transform: translateX(0);
     }
@@ -23,10 +26,14 @@
         flex-direction: column;
         position: absolute;
         text-align: center;
+        padding: 1rem 0rem;
         justify-content: space-between;
         background-color: var(--colorSecundary);
         width: 100vw;
         height: 80vh;
+    }
+    .productos div img{
+        width: 50px;
     }
     nav ul a{
         color: var(--colorLetterSecundary);
@@ -45,20 +52,22 @@
         display: none;
     }
     .productos{
-        height: 120vh;
-        grid-template-rows: 40% 55%;
+        padding-bottom: 1.2rem;
+        height: auto;
+        grid-template-rows: 30% 55%;
         grid-template-columns: 10% 90%;
     }
     .informacion{
+        margin-top: 1rem;
         grid-column: span 2;
     }
     aside{
         justify-content: flex-start;
     }
     .productos aside img{
-        width: 5rem;
+        width: 3rem;
     }
-    .productos div{
+    .productos .image{
         margin-left: 2.6rem;
         height: auto;
     }
@@ -69,7 +78,7 @@
         width: 80%
     }
     .previsualizacion.active{
-        transform: translateX(-10vw);
+        transform: translateX(0vw);
     }
     .previsualizacion .caja div img{
         width: 100%;
@@ -81,7 +90,7 @@
         transform: translateX(-130vw);
     }
     .productos div img{
-        width: 22rem;
+        width: 100%;
     }
     .cuenta .caja{
         width: 80%;

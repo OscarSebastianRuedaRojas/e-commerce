@@ -5,6 +5,7 @@
 }
 body{
     overflow-x: hidden;
+    background-color: var(--Background);
     /* overflow-y: hidden; */
 }
 .menus{
@@ -24,7 +25,7 @@ header{
     margin: 1vw 2vw;
 }
 .cabeza picture img{
-    width: 20vw;
+    width: 10vw;
 }
 .busqueda{
     width: 65%;
@@ -87,11 +88,21 @@ nav ul a:hover{
 }
 .categorias{
     margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    background-color: var(--Background);
 }
 .productos{
     display: grid;
-    width: 100vw;
+    width: 80%;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    background-color: var(--colorLetterSecundary);
+    border: 2px var(--colorPrimary) solid;
+    border-radius: 8px;
     grid-template-columns: 10% auto auto;
+    filter: drop-shadow(3px 5px 3px var(--colorLetterPrimary));
 }
 aside{
     display: flex;
@@ -134,12 +145,15 @@ div img{
     border-radius: 5px;
     padding: 0.5vw 2vw;
 }
-
+.informacion .precio{
+    margin: 0;
+}
 .previsualizacion{
     position: absolute;
     width: 100vw;
     height: 100vh;
     display: flex;
+    z-index: 10;
     transform: translateX(-100vw);
     flex-direction: column;
     justify-content: center;
