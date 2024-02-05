@@ -5,6 +5,7 @@
 }
 body{
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 header{
     display: flex;
@@ -72,7 +73,7 @@ nav ul{
     list-style: none;
 }
 nav ul a{
-    padding: 1vw 1vw;
+    padding: 0.8rem 1rem;
     text-decoration: none;
     color: var(--colorSecundary);
     font-size: 1rem;
@@ -83,6 +84,9 @@ nav ul a:hover{
 }
 .categorias{
     margin-top: 0.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 90vh;
 }
 .productos{
     display: grid;
@@ -129,4 +133,48 @@ div img{
     font-size: 1.5rem;
     border-radius: 5px;
     padding: 0.5vw 2vw;
+}
+
+.previsualizacion{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    transform: translateX(-100vw);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.previsualizacion.active{
+    transform: translateX(0);
+}
+.previsualizacion .caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorLetterSecundary);
+    width: 50%;
+    border: 1px var(--colorLetterPrimary) solid;
+    border-radius: 6px;
+}
+.previsualizacion .informacion{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.previsualizacion picture{
+    display: flex;
+    justify-content: center;
+}
+.previsualizacion img{
+    width: 40%;
+}
+.previsualizacion h2{
+    font-size: 2rem;
+}
+.previsualizacion p{
+    margin-top: 0;
+}
+.previsualizacion .caja .precio{
+    margin: 0.2rem 0rem;
 }
