@@ -21,6 +21,9 @@
     nav.active{
         transform: translateX(0);
     }
+    .cabeza picture img{
+        width: 6rem;
+    }
     nav ul{
         display: flex;
         flex-direction: column;
@@ -93,13 +96,23 @@
         width: 100%;
     }
     .cuenta .caja{
-        width: 80%;
+        width: 90%;
     }
+    
     .contenidoo h4{
         width: 75%;
     }
     .precioContenido input{
         width: 47%;
+    }
+    .precioContenido p{
+        font-size: 1rem;
+    }
+    .pago div p{
+        font-size: 1.2rem;
+    }
+    .pago button{
+        font-size: 1.2rem;
     }
     .xCuenta{
         position: relative;
