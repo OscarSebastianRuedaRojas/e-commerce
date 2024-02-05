@@ -222,7 +222,7 @@ div img{
 }
 .xCuenta{
     position: relative;
-    transform: translateX(18rem);
+    left: 0;
 }
 .caja i{
     position: relative;
