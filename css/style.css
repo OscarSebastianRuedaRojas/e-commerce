@@ -145,8 +145,121 @@ div img{
     justify-content: center;
     align-items: center;
 }
+.x{
+    position: relative;
+    right: 0;
+}
+.bx-x{
+    font-size: 2rem;
+}
 .previsualizacion.active{
     transform: translateX(0);
+}
+.cerrar.active{
+    transform: translateX(-100vw);
+}
+.cantidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cuenta{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 10;
+    transform: translateX(-100vw);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cuenta.active{
+    transform: translate(0);
+}
+.cerrarCuenta.active{
+    transform: translateX(-100vw);
+}
+.contenidoo{
+    display: flex;
+    flex-direction: column;
+}
+.contenidoo h4{
+    font-size: 1.5rem;
+    margin: 0.7rem 0rem;
+}
+.bxs-cart{
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+.precioContenido{
+    display: flex;
+    flex-direction: row;
+}
+.precioContenido p{
+    font-size: 1.2rem;
+    color: var(--colorPrimary);
+}
+.cuenta h2{
+    font-size: 1.5rem;
+    color: var(--colorSecundary);
+}
+.xCuenta{
+    position: relative;
+    transform: translateX(18rem);
+}
+.caja i{
+    position: relative;
+    right: 0;
+}
+.contenedorCajitas{
+    width: 100%;
+}
+.cajita{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.cajita img{
+    width: 7rem;
+}
+.cuenta .caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorLetterSecundary);
+    width: 50%;
+    border: 1px var(--colorLetterPrimary) solid;
+    border-radius: 6px;
+}
+.pago{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.pago h4{
+    font-size: 1.5rem;
+    color: var(--colorSecundary);
+    margin-left: 1rem;
+}
+.pago div{
+    margin-right: 1rem;
+}
+.pago div p{
+    font-size: 1.5rem;
+    color: var(--colorPrimary);
+}
+.pago button{
+    background-color: var(--colorPrimary);
+    color: var(--colorLetterSecundary);
+    font-size: 1.5rem;
+    border: none;
+    margin: 1rem 0rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
 }
 .previsualizacion .caja{
     display: flex;
