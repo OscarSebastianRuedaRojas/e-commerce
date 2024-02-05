@@ -12,7 +12,7 @@ document.querySelector('.x').addEventListener('click',
 function() {
     cerrar.classList.toggle('active')
  }); 
-document.querySelector('.carrito').addEventListener('click',
+document.querySelector('.carritos').addEventListener('click',
 function() {
     cuenta.classList.toggle('active')
  }); 
@@ -20,3 +20,8 @@ function() {
  function() {
     cerrarCuenta.classList.toggle('active')
   }); 
+  let nav = document.querySelector('nav');
+  document.querySelector('.menus').addEventListener('click',
+  function() {
+      nav.classList.toggle('active')
+  });

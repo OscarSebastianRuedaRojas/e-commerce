@@ -1,0 +1,99 @@
+@import url(variables.css);
+@media(max-width: 540px){
+    body{
+        overflow-x: hidden;
+        margin: 0; /* Agregamos esto para asegurarnos de que no haya márgenes en el cuerpo */
+        padding: 0; /* Agregamos esto para asegurarnos de que no haya relleno en el cuerpo */
+        width: 100vw;
+        overflow-y: scroll;
+    }
+    html{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        transform: translateX(-100vw);
+    }
+    nav.active{
+        transform: translateX(0);
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        justify-content: space-between;
+        background-color: var(--colorSecundary);
+        width: 100vw;
+        height: 80vh;
+    }
+    nav ul a{
+        color: var(--colorLetterSecundary);
+    }
+    .cabeza{
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .bx-user-circle{
+        padding: 0;
+    }
+    .carrito .carrito{
+        margin-left: 1.2rem;
+    }
+    .busqueda{
+        display: none;
+    }
+    .productos{
+        height: 120vh;
+        grid-template-rows: 40% 55%;
+        grid-template-columns: 10% 90%;
+    }
+    .informacion{
+        grid-column: span 2;
+    }
+    aside{
+        justify-content: flex-start;
+    }
+    .productos aside img{
+        width: 5rem;
+    }
+    .productos div{
+        margin-left: 2.6rem;
+        height: auto;
+    }
+    .previsualizacion{
+        transform: translateX(-130vw);
+    }
+    .previsualizacion .caja{
+        width: 80%
+    }
+    .previsualizacion.active{
+        transform: translateX(-10vw);
+    }
+    .previsualizacion .caja div img{
+        width: 100%;
+    }
+    .previsualizacion div{
+        margin: 0;
+    }
+    .cuenta{
+        transform: translateX(-130vw);
+    }
+    .productos div img{
+        width: 22rem;
+    }
+    .cuenta .caja{
+        width: 80%;
+    }
+    .contenidoo h4{
+        width: 75%;
+    }
+    .precioContenido input{
+        width: 47%;
+    }
+    .xCuenta{
+        position: relative;
+        transform: translateX(8.3rem);
+    }
+}
