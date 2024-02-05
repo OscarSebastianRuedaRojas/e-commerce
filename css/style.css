@@ -87,9 +87,6 @@ nav ul a:hover{
 }
 .categorias{
     margin-top: 0.5rem;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 90vh;
 }
 .productos{
     display: grid;
